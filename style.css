@@ -1,0 +1,387 @@
+/* ===========================
+   SMART MARKET CALCULATOR
+   PART 1 CSS
+=========================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:#eef2f7;
+    transition:0.3s;
+}
+
+.container{
+    width:95%;
+    max-width:700px;
+    margin:30px auto;
+}
+
+header{
+    text-align:center;
+    margin-bottom:25px;
+}
+
+header h1{
+    font-size:32px;
+    color:#1f2937;
+    margin-bottom:10px;
+}
+
+header p{
+    color:#666;
+    margin-bottom:18px;
+}
+
+#themeBtn{
+    padding:10px 18px;
+    border:none;
+    border-radius:10px;
+    background:#111827;
+    color:white;
+    cursor:pointer;
+    font-size:15px;
+    transition:.3s;
+}
+
+#themeBtn:hover{
+    transform:scale(1.05);
+}
+
+.card{
+    background:#fff;
+    padding:22px;
+    border-radius:18px;
+    margin-bottom:22px;
+    box-shadow:0 10px 25px rgba(0,0,0,.08);
+}
+
+.card h2{
+    color:#222;
+    margin-bottom:10px;
+}
+
+.card p{
+    color:#666;
+    margin-bottom:18px;
+}
+
+.input-box{
+    margin-bottom:18px;
+}
+
+.input-box label{
+    display:block;
+    margin-bottom:8px;
+    font-weight:600;
+    color:#333;
+}
+
+.input-box input,
+.input-box select{
+    width:100%;
+    padding:14px;
+    border:2px solid #ddd;
+    border-radius:12px;
+    outline:none;
+    font-size:16px;
+    transition:.3s;
+}
+
+.input-box input:focus,
+.input-box select:focus{
+    border-color:#2563eb;
+}
+
+.quick-weight{
+    margin:20px 0;
+}
+
+.quick-weight h3{
+    margin-bottom:12px;
+    color:#222;
+}
+
+.buttons{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:10px;
+}
+
+.quickBtn{
+    padding:12px;
+    border:none;
+    border-radius:12px;
+    background:#2563eb;
+    color:white;
+    cursor:pointer;
+    font-weight:600;
+    transition:.3s;
+}
+
+.quickBtn:hover{
+    background:#1d4ed8;
+    transform:translateY(-2px);
+}
+
+.action-buttons{
+    display:flex;
+    gap:12px;
+    margin-top:20px;
+}
+
+.action-buttons button{
+    flex:1;
+    padding:14px;
+    border:none;
+    border-radius:12px;
+    font-size:16px;
+    font-weight:600;
+    cursor:pointer;
+    transition:.3s;
+}
+
+#calculateBtn{
+    background:#16a34a;
+    color:white;
+}
+
+#calculateBtn:hover{
+    background:#15803d;
+}
+
+#resetBtn{
+    background:#ef4444;
+    color:white;
+}
+
+#resetBtn:hover{
+    background:#dc2626;
+}
+/* ===========================
+   RESULT SECTION
+=========================== */
+
+.result{
+    margin-top:25px;
+    padding:20px;
+    border-radius:15px;
+    background:#f8fafc;
+    border:2px dashed #d1d5db;
+    text-align:center;
+}
+
+.result h2{
+    color:#374151;
+    margin-bottom:10px;
+}
+
+#totalPrice{
+    font-size:42px;
+    color:#16a34a;
+    margin:10px 0;
+}
+
+#calculationText{
+    color:#6b7280;
+    font-size:15px;
+}
+
+/* ===========================
+   REVERSE CALCULATOR
+=========================== */
+
+#reverseBtn{
+    width:100%;
+    padding:14px;
+    border:none;
+    border-radius:12px;
+    background:#7c3aed;
+    color:#fff;
+    font-size:16px;
+    font-weight:600;
+    cursor:pointer;
+    transition:.3s;
+}
+
+#reverseBtn:hover{
+    background:#6d28d9;
+}
+
+.reverseResult{
+    margin-top:18px;
+    background:#f9fafb;
+    border-radius:12px;
+    padding:15px;
+    text-align:center;
+}
+
+#reverseOutput{
+    color:#111827;
+}
+
+/* ===========================
+   SHOPPING LIST
+=========================== */
+
+.shopping-input{
+    display:flex;
+    gap:10px;
+    margin-bottom:15px;
+}
+
+.shopping-input input{
+    flex:1;
+    padding:12px;
+    border:2px solid #ddd;
+    border-radius:10px;
+    outline:none;
+}
+
+#addItem{
+    padding:12px 20px;
+    border:none;
+    border-radius:10px;
+    background:#2563eb;
+    color:#fff;
+    cursor:pointer;
+}
+
+#shoppingList{
+    list-style:none;
+    margin-top:15px;
+}
+
+#shoppingList li{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    background:#f3f4f6;
+    margin-bottom:10px;
+    padding:12px;
+    border-radius:10px;
+    font-weight:500;
+}
+
+#grandTotal{
+    color:#16a34a;
+    font-weight:bold;
+}
+
+/* ===========================
+   HISTORY
+=========================== */
+
+#history{
+    background:#f8fafc;
+    border-radius:12px;
+    padding:15px;
+    min-height:80px;
+    color:#555;
+    overflow:auto;
+}
+
+/* ===========================
+   DARK MODE
+=========================== */
+
+body.dark{
+    background:#111827;
+}
+
+body.dark .card{
+    background:#1f2937;
+}
+
+body.dark header h1,
+body.dark .card h2,
+body.dark .card h3,
+body.dark label{
+    color:#fff;
+}
+
+body.dark p,
+body.dark #calculationText,
+body.dark #history{
+    color:#d1d5db;
+}
+
+body.dark input,
+body.dark select{
+    background:#374151;
+    color:#fff;
+    border-color:#4b5563;
+}
+
+body.dark .result,
+body.dark .reverseResult,
+body.dark #shoppingList li{
+    background:#374151;
+    color:#fff;
+}
+
+/* ===========================
+   MOBILE RESPONSIVE
+=========================== */
+
+@media(max-width:600px){
+
+    .container{
+        width:95%;
+    }
+
+    header h1{
+        font-size:25px;
+    }
+
+    .buttons{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    .action-buttons{
+        flex-direction:column;
+    }
+
+    .shopping-input{
+        flex-direction:column;
+    }
+
+    #totalPrice{
+        font-size:34px;
+    }
+
+}
+
+/* ===========================
+   SMALL ANIMATION
+=========================== */
+
+.card{
+    animation:fadeIn .5s ease;
+}
+
+@keyframes fadeIn{
+
+    from{
+        opacity:0;
+        transform:translateY(20px);
+    }
+
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+
+}
+
+button{
+    transition:.25s;
+}
+
+button:active{
+    transform:scale(.96);
+}
